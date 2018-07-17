@@ -9,19 +9,19 @@
             <a class="text-md-right" href="#">Cerrar sesión</a>
           </div>
 
-          <div class="row justify-content-center">
+          <div id="busqueda" class="row justify-content-center">
             <div class="col-sm-8">
               <div class="input-group mb-3">
-                <input type="text" name="busqueda" class="form-control" placeholder="Buscar usuario, autor o libro" aria-label="Busqueda" aria-describedby="Busqueda" #busqueda (keyup)="buscar(busqueda)" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"/>
+                <input  type="text" name="busqueda" class="form-control" placeholder="Buscar usuario , tienda , producto" aria-label="Busqueda" aria-describedby="Busqueda" #busqueda (keyup)="buscar(busqueda)" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"/>
                 <div *ngIf="userSearch || libroSearch || autorSearch " class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                   <a class="dropdown-item" href="#" *ngFor="let user of userSearch">
                     {{ user.usuario }} <span class="badge badge-pill badge-primary col-sm-4">Usuario</span>
                   </a>
                   <a class="dropdown-item" href="#" *ngFor="let libro of libroSearch">
-                    {{ libro.nombre }} <span class="badge badge-pill badge-info">Libro</span>
+                    {{ libro.nombre }} <span class="badge badge-pill badge-info">Producto</span>
                   </a>
                   <a class="dropdown-item" href="#" *ngFor="let autor of autorSearch">
-                    {{ autor.nombre +" " + autor.apellido }} <span class="badge badge-pill badge-warning">Autor</span>
+                    {{ autor.nombre +" " + autor.apellido }} <span class="badge badge-pill badge-warning">Tiempo</span>
                   </a>
                 </div>
                 <div class="input-group-append">
