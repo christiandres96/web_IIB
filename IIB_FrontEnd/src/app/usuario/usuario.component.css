@@ -1,4 +1,19 @@
-.arrow {
-  background-color: lightgreen;
-  margin-top: 1em;
+
+
+.arrowRighr {
+  width: 34px;
+  height: 34px;
+  background-image: url("fast-forward.png");
+
 }
+.arrowLeft{
+  width: 34px;
+  height: 34px;
+  background-image: url("rewind.png");
+
+}
+
+app-autor-detail:hover{
+  cursor: pointer;
+}
+

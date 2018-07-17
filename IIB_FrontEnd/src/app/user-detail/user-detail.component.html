@@ -1,9 +1,16 @@
-<div class="row justify-content-center">
-  <p>{{ usuario.usuario | uppercase }}</p>
-</div>
-<div class="row justify-content-center">
-  <img class="img-fluid" [src]="usuario.imagenUrl">
-</div>
-<div class="row justify-content-center">
-  <button class="btn btn-primary">Visitar</button>
-</div>
+<div class="card" style="width: 18rem;">
+
+  <br>
+  <div class="row justify-content-center">
+    <img class="img-fluid" [src]="usuario.imagenUrl">
+  </div>
+  <div class="card-body">
+
+  <div class="row justify-content-center">
+    <button class="btn btn-link">{{ usuario.usuario | uppercase }}</button>
+  </div>
+    <br>
+  </div>
+
+
+  </div>
