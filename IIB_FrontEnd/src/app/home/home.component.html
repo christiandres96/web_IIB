@@ -21,11 +21,11 @@
                     {{ libro.nombre }} <span class="badge badge-pill badge-info">Producto</span>
                   </a>
                   <a class="dropdown-item" href="#" *ngFor="let autor of autorSearch">
-                    {{ autor.nombre +" " + autor.apellido }} <span class="badge badge-pill badge-warning">Tiempo</span>
+                    {{ autor.nombre +" " + autor.apellido }} <span class="badge badge-pill badge-warning">Tienda</span>
                   </a>
                 </div>
                 <div class="input-group-append">
-                  <button class="btn btn-primary" (click)="buscar(busqueda)" type="button" id="btn-buscar">Buscar</button>
+                  <button class="btn btn-info" (click)="buscar(busqueda)" type="button" id="btn-buscar">Buscar</button>
                 </div>
               </div>
             </div>
@@ -36,6 +36,11 @@
     </nav>
 
 </div>
+<br>
 <app-usuario></app-usuario>
+<br>
+<br>
 <app-autor></app-autor>
+<br>
+<br>
 <app-libro></app-libro>
